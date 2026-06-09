@@ -22,6 +22,7 @@ import {
   FaEnvelope,
   FaGithub,
   FaFacebook,
+  FaInstagram,
   FaLinkedin,
   FaWhatsapp,
   FaArrowDown,
@@ -61,8 +62,9 @@ const SOCIALS = {
   whatsapp:
     'https://wa.me/50582211526?text=Hola%20Jeyling%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte.',
   github: 'https://github.com/JiniethM',
-  linkedin: 'https://www.linkedin.com/in/jinieth-montiel/',
-  facebook: 'https://www.facebook.com/jinieth.montiel',
+  linkedin: 'https://www.linkedin.com/in/jeilyng-jinieth-montiel-jiron-82b278238/',
+  instagram: 'https://www.instagram.com/jiniethmontiel?utm_source=qr',
+  facebook: 'https://www.facebook.com/share/14hVUb2rQJm/?mibextid=wwXIfr',
 };
 
 const ROLES = [
@@ -73,7 +75,7 @@ const ROLES = [
 ];
 
 const STATS = [
-  { value: 5, suffix: '+', label: 'Proyectos', icon: <FaFolderOpen /> },
+  { value: 6, suffix: '+', label: 'Proyectos', icon: <FaFolderOpen /> },
   { value: 12, suffix: '+', label: 'Tecnologías', icon: <FaCode /> },
   { value: 3, suffix: '', label: 'Plataformas', icon: <FaLaptopCode /> },
   { value: 100, suffix: '%', label: 'Pasión', icon: <FaHeart /> },
@@ -121,6 +123,14 @@ const PROJECTS = [
     icon: <FaMobileAlt />,
     tech: ['Flutter', 'Dart'],
     accent: '#f472b6',
+  },
+  {
+    name: 'Call Center',
+    url: 'https://github.com/JiniethM/Call-Center.git',
+    desc: 'Aplicación móvil para gestión de atención y datos de call center.',
+    icon: <FaUsers />,
+    tech: ['React Native', 'Expo', 'Firebase'],
+    accent: '#38bdf8',
   },
 ];
 
@@ -186,7 +196,7 @@ const BENTO = [
   },
   {
     icon: <FaUsers />,
-    title: 'Equipo · Inglés B2',
+    title: 'Equipo · Inglés A4',
     desc: 'Comunicación clara, trabajo colaborativo y entrega a tiempo.',
     span: 'bento-card--wide',
   },
@@ -479,6 +489,9 @@ function App() {
               <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-cursor>
                 <FaLinkedin />
               </a>
+              <a href={SOCIALS.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-cursor>
+                <FaInstagram />
+              </a>
               <a href={SOCIALS.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" data-cursor>
                 <FaFacebook />
               </a>
@@ -522,7 +535,7 @@ function App() {
                     Soy <strong>Jeyling Jinieth Montiel Jirón</strong>,
                     desarrolladora Fullstack con experiencia en web y móvil.
                     Estudiante de Ingeniería en Sistemas de la Información en la
-                    UNAN, con nivel de inglés B2. Me especializo en Git, Java,
+                    UNAN, con nivel de inglés A4. Me especializo en Git, Java,
                     Spring Boot y React, y disfruto convertir problemas reales en
                     productos usables.
                   </p>
@@ -728,6 +741,9 @@ function App() {
                   <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" className="contact__social" data-cursor>
                     <FaLinkedin /> <span>LinkedIn</span>
                   </a>
+                  <a href={SOCIALS.instagram} target="_blank" rel="noreferrer" className="contact__social" data-cursor>
+                    <FaInstagram /> <span>Instagram</span>
+                  </a>
                   <a href={SOCIALS.facebook} target="_blank" rel="noreferrer" className="contact__social" data-cursor>
                     <FaFacebook /> <span>Facebook</span>
                   </a>
@@ -753,6 +769,9 @@ function App() {
                   </a>
                   <a href={SOCIALS.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" data-cursor>
                     <FaLinkedin />
+                  </a>
+                  <a href={SOCIALS.instagram} target="_blank" rel="noreferrer" aria-label="Instagram" data-cursor>
+                    <FaInstagram />
                   </a>
                   <a href={SOCIALS.facebook} target="_blank" rel="noreferrer" aria-label="Facebook" data-cursor>
                     <FaFacebook />
