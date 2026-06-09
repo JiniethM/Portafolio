@@ -46,7 +46,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <a href="#inicio" className="navbar__brand" onClick={(e) => go(e, 'inicio')} data-cursor>
         <span className="navbar__brand-mark">JM</span>
-        <span className="navbar__brand-text">jeyling</span>
+        <span className="navbar__brand-text">jeilyng</span>
       </a>
       <ul className="navbar__links">
         {LINKS.map((l) => (

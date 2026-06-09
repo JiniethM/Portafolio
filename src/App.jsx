@@ -60,7 +60,7 @@ const PHONE_DISPLAY = '+505 8221 1526';
 const SOCIALS = {
   email: `mailto:${EMAIL}`,
   whatsapp:
-    'https://wa.me/50582211526?text=Hola%20Jeyling%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte.',
+    'https://wa.me/50582211526?text=Hola%20Jeilyng%2C%20vi%20tu%20portafolio%20y%20me%20interesa%20contactarte.',
   github: 'https://github.com/JiniethM',
   linkedin: 'https://www.linkedin.com/in/jeilyng-jinieth-montiel-jiron-82b278238/',
   instagram: 'https://www.instagram.com/jiniethmontiel?utm_source=qr',
@@ -424,7 +424,7 @@ function App() {
               <span className="hero__avatar-ring hero__avatar-ring--inner" aria-hidden="true" />
               <img
                 src="/imagenmia.jpg"
-                alt="Jeyling Montiel"
+                alt="Jeilyng Montiel"
                 className="hero__avatar"
                 width="132"
                 height="132"
@@ -436,7 +436,7 @@ function App() {
 
             <h1 className="hero__title">
               <span className="hero__title-line">
-                <SplitChars text="Jeyling" />
+                <SplitChars text="Jeilyng" />
               </span>
               <span className="hero__title-line hero__title-line--grad">
                 <SplitChars text="Montiel" />
@@ -532,7 +532,7 @@ function App() {
               <div className="about__grid">
                 <div className="about__text reveal" data-reveal="left">
                   <p className="reveal-child">
-                    Soy <strong>Jeyling Jinieth Montiel Jirón</strong>,
+                    Soy <strong>Jeilyng Jinieth Montiel Jirón</strong>,
                     desarrolladora Fullstack con experiencia en web y móvil.
                     Estudiante de Ingeniería en Sistemas de la Información en la
                     UNAN, con nivel de inglés A4. Me especializo en Git, Java,
@@ -758,7 +758,7 @@ function App() {
           <div className="container">
             <div className="footer__top">
               <div className="footer__brand-col">
-                <span className="footer__brand">Jeyling Montiel</span>
+                <span className="footer__brand">Jeilyng Montiel</span>
                 <p className="footer__tagline">
                   Desarrolladora Fullstack — construyo experiencias web y móviles
                   con código limpio y diseño con intención.
@@ -796,7 +796,7 @@ function App() {
             </div>
 
             <div className="footer__bottom">
-              <p>© {new Date().getFullYear()} Jeyling Montiel · Hecho con React, anime.js y mucho ☕</p>
+              <p>© {new Date().getFullYear()} Jeilyng Montiel · Hecho con React, anime.js y mucho ☕</p>
               <button
                 type="button"
                 className="footer__top-btn"
