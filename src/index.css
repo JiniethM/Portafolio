@@ -1,65 +1,111 @@
-/* ── src/index.css ───────────────────────────────────────────────────────── */
+/* ============================================================
+   DESIGN SYSTEM · tokens globales
+   Paleta femenina: rosa · fucsia · violeta (armonía análoga)
+   ============================================================ */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* Paleta base — fondo ciruela muy oscuro */
+  --bg: #0c0710;
+  --bg-soft: #160d1c;
+  --surface: rgba(34, 20, 42, 0.55);
+  --surface-strong: rgba(42, 24, 52, 0.85);
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Texto */
+  --text: #fbf0fa;
+  --text-soft: #e2cfe6;
+  --text-dim: #a98bb4;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* Acentos (paleta cálida-fría: rosa + fucsia + violeta, cohesionada) */
+  --pink: #f472b6;
+  --fuchsia: #e879f9;
+  --violet: #c084fc;
+  --rose: #fb7185;
+
+  /* Gradientes */
+  --grad-main: linear-gradient(120deg, #fb7185 0%, #f472b6 45%, #c084fc 100%);
+  --grad-soft: linear-gradient(120deg, #f472b622, #c084fc22);
+
+  /* Glow */
+  --glow-pink: 0 0 40px rgba(244, 114, 182, 0.34);
+  --glow-violet: 0 0 40px rgba(192, 132, 252, 0.34);
+
+  /* Tipografía */
+  --font-display: 'Syne', 'Space Grotesk', system-ui, sans-serif;
+  --font-sans: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  color-scheme: dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
-a {
-  font-weight: 500;
-  color: #2e8b57; /* verde montaña */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-a:hover {
-  color: #800020; /* rojo vino */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+::selection {
+  background: var(--fuchsia);
+  color: #1a0a18;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--pink), var(--violet));
+  border-radius: 99px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #2e8b57; /* verde montaña */
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
-  a:hover {
-    color: #800020; /* rojo vino */
-  }
-  button {
-    background-color: #f9f9f9;
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
